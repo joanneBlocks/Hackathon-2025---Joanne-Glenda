@@ -1,41 +1,74 @@
 * {
-    font: sans-serif;
-    color: white;
-    background-color: black;
+  font: sans-serif;
+  color: white;
+  margin: 10px 10px 10px 10px;
 }
 
+body {
+  margin: 20px 20px;
+}
 /* Menu */
 
 .navbar-brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    color: #f1c40f;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #f1c40f;
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
-    margin-right: 15px;    
+  color: #fff;
+  margin-right: 15px;    
 }
 
 .social-icons a {
-    color: #fff;
-    margin-right: 15px;
+  color: #fff;
+  margin-right: 15px;
 }
 
 /* Homepage (index.html) */
 .customerDescription {
-    display: flex;
+  display: flex;
 }
 
 .customerDescription img {
-    height: 20px;
-    width: 20px;
-    border: 50%;
-    margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.customerDescription p {
+  padding-top: 12px;
 }
 
 .testimonials {
-    display: flex;
+  display: flex;
+}
+
+.blogBoxes {
+  display: flex;
+}
+
+.blogBoxesDescription {
+  margin-right: 10px;
+}
+
+.blogBoxesDescription img {
+  height: 300px;
+}
+
+/* Carousel */
+
+.carouselAlignment {
+  text-align: center;
+}
+
+/* Video */
+
+.videoAlignment {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Footer */
@@ -43,6 +76,5 @@
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
   color: #fff;
 }
