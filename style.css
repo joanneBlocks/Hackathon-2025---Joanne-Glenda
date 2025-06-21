@@ -1,15 +1,15 @@
 * {
     font: sans-serif;
-    color: #fff;
+    color: white;
     background-color: black;
 }
 
 /* Menu */
 
 .navbar-brand {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
-      color: #f1c40f;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #f1c40f;
 }
 
 .navbar-nav .nav-link {
