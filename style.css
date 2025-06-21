@@ -126,6 +126,16 @@ span {
   transform: rotate(-45deg) translateY(100%);
 }
 
+/* Form */
+
+form {
+  text-align: left;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 /* Footer */
 
 footer {
