@@ -6,22 +6,71 @@
     <title>Cake Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+   <style>
+     .hero-section { 
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+    .tagline {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.5rem;
+    }
+    
+</style>
+
 </head>
-<body>
+<body class="bg-black">
+
+<!-- Header -->
     <header>
-        <h1 class="text-warning">Cake Shop</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/cakes.html">Cakes</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-black px-4 py-3">
+        <div class="container-fluid">
+        <div class="d-flex align-items-center">
+            <div class="social-icons me-3">
+            <a href="#"><i class="bi bi-facebook"></i></a> 
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+            <a class="navbar-brand mx-auto" href="#">Cake Shop</a>
+      <div class="d-flex">
+        <a href="#" class="text-white">Call Us: +63 123 456 7890</a>
+        </div>
+        </div>
     </nav>
-    <p>Healthy Made Delicious Cake</p>
+    </header>
+   
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-black">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cakes.html">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white text-center">
+    <div class="hero-text">
+      <h1>Home</h1>
+    </div>
+  </section>
+  
     <div>
         <p>Healthy Made Delicious Cake</p>
         <div>
@@ -42,48 +91,64 @@
         <!-- Video -->
     </div>
     <div>
-        <p>Food Lovers' Say</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                    </th>
-                    <th>
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                    </th>
-                    <th>
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                        <img src="./assets_joanne/star.png" alt="star" width="30px">
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr colspan="6">
-                    <td colspan="2">
-                        <p>&quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;</p>
-                    </td>
-                    <td colspan="2"></td>
-                    <td colspan="2"></td>
-                </tr>
-                <tr colspan="6">
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Food Lovers' Say</h2>
     </div>
+    <div class="testimonials">
+        <div class="bg-black card shadow-1-strong">
+            <div class = "card-body text-white">
+                <h5 class="card-title">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                </h5>
+                <p class="card-text">
+                    &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+                </p>
+                <div class="customerDescription">
+                    <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p>Maria Maria</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black card shadow-1-strong">
+            <div class = "card-body text-white">
+                <h5 class="card-title">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                </h5>
+                <p class="card-text">
+                    &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+                </p>
+                <div class="customerDescription">
+                    <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p>Bernardo Bernardo</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black card shadow-1-strong">
+            <div class = "card-body text-white">
+                <h5 class="card-title">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                    <img src="./assets_joanne/star.png" alt="star" width="30px">
+                </h5>
+                <p class="card-text">
+                    &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+                </p>
+                <div class="customerDescription">
+                    <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p>Roberto Roberto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <div>
         <p>Our Blogs</p>
         
@@ -91,5 +156,6 @@
     <footer>Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.</footer>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!--Joanne's Page-->
 </body>
 </html>
