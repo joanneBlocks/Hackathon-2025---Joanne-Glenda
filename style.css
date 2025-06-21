@@ -9,7 +9,7 @@
 .navbar-brand {
     font-family: 'Great Vibes', cursive;
     font-size: 2rem;
-    color: #f1c40f;
+    color: #f1c40f !important;
 }
 
 .navbar-nav .nav-link {
