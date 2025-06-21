@@ -1,0 +1,30 @@
+* {
+    font: sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+
+ .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #f1c40f;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+      margin-right: 15px;
+    }
+
+
+    .social-icons a {
+      color: #fff;
+      margin-right: 15px;
+    }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+}
