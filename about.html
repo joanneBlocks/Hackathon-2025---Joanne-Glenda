@@ -27,6 +27,11 @@
       padding: 50px 20px;
       font-size: 1.5rem;
     }
+
+    .sticky-top {
+  z-index: 1030; /* Bootstrap default for navbars */
+}
+
     
 </style>
 
@@ -35,7 +40,8 @@
 
 <!-- Header with Responsive Navigation -->
 <header>
-  <nav class="navbar navbar-expand-lg bg-black px-4 py-3 position-relative flex-column">
+  <!-- <nav class="navbar navbar-expand-lg bg-black px-4 py-3 position-relative flex-column"> -->
+    <nav class="navbar navbar-expand-lg bg-black px-4 py-3 fixed-top flex-column">
 
     <!-- Top Bar: Socials, Brand, Contact -->
     <div class="container-fluid d-flex justify-content-between align-items-center w-100">
@@ -96,30 +102,45 @@
   
   <!-- Tagline Section -->
   <section class="tagline">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quas porro vero molestias cumque explicabo iste pariatur hic, vel dolores doloribus vitae alias! <br>Est quaerat nulla atque temporibus quasi mollitia placeat vitae et minus aliquid suscipit vel, expedita molestias pariatur dolor eveniet, laudantium enim molestiae.</p>
+    <p>This is Schilers. Awesome Food <br>Theme. Purchase it and eat<br>Burgers.</p>
     <!-- <hr style="width: 50px; margin: 20px auto; border: 2px solid #f1c40f;"> -->
     <div class="separator mx-auto"></div>
   </section>
 
 <!-- About-Content Section -->
-<div class="container-fluid py-5" style="background-color: black">
+<div class="container-fluid py-5 bg-black">
   <div class="row align-items-center">
-    <div class="col-md-6">
-<div class="highlight-text">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Beatae earum expedita dolores maiores incidunt. Inventore magnam iusto rem molestiae doloremque vel rerum? Illum eius nobis ullam assumenda minima reiciendis velit?
-</div>
-<div class="separator"></div>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam optio harum veritatis exercitationem atque obcaecati dicta odit ea odio, aliquid blanditiis saepe aut pariatur aspernatur vitae modi sed iusto minus.</p>
-<p>Quis sit necessitatibus accusantium obcaecati, reprehenderit sint vitae illum. Natus tempora temporibus eum perspiciatis pariatur. Ipsum quisquam molestias cumque doloribus, officiis eaque.</p>
-</div>
-</div>
-<div class="col-md-6 text=center">
-<img src="/assets_glenda/cake 1.jpg" alt="Cake" class="img-fluid rounded">
+    
+    <!-- Left: Text Column -->
+    <div class="col-md-6 text-white px-5">
+      <h2 class="text-warning mb-4 font-size: 2rem">
+        This is Schilers. Awesome Food Theme.<br>
+        Purchase it and eat Burgers.
+      </h2>
+
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute dolor in reprehend erit in voluptate velit esse cillum.
+      </p>
+
+      <p>
+        Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in
+        reprehend erit in voluptate velit esse cillum.
+      </p>
+    </div>
+
+    <!-- Right: Image Column -->
+    <div class="col-md-5 text-center px-6 mb-4 mb-md-0">
+      <img src="/assets_glenda/Cake 3.jpg" alt="Cake" class="img-fluid rounded shadow">
+    </div>
 
   </div>
-  </div>
 </div>
+
 
 
   <!-- Bootstrap JS & Icons -->
