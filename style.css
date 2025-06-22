@@ -1,48 +1,145 @@
 * {
-    font: sans-serif;
-    color: white;
-    background-color: black;
+  font: sans-serif;
+  color: white;
+  margin: 10px 10px 10px 10px;
 }
 
+body {
+  margin: 20px 20px;
+}
 /* Menu */
 
 .navbar-brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    color: #f1c40f !important;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #f1c40f !important;
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
-    margin-right: 15px;    
+  color: #fff;
+  margin-right: 15px;    
 }
 
 .social-icons a {
-    color: #fff;
-    margin-right: 15px;
+  color: #fff;
+  margin-right: 15px;
 }
 
 /* Homepage (index.html) */
 .customerDescription {
-    display: flex;
+  display: flex;
 }
 
 .customerDescription img {
-    height: 20px;
-    width: 20px;
-    border: 50%;
-    margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.customerDescription p {
+  padding-top: 12px;
 }
 
 .testimonials {
-    display: flex;
+  display: flex;
 }
+
+.blogBoxes {
+  display: flex;
+}
+
+.blogBoxesDescription {
+  margin-right: 10px;
+}
+
+.blogBoxesDescription img {
+  height: 300px;
+}
+
+/* Carousel */
+
+.carouselAlignment {
+  text-align: center;
+}
+
+/* Video */
+
+.videoAlignment {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Cakes (cakes.html) */
+
+span {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+
+.holographic-card {
+  width: 300px;
+  height: 200px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card img {
+  color: gold;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* Form */
+
+form {
+  text-align: left;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 /* Footer */
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
   color: #fff;
 }
