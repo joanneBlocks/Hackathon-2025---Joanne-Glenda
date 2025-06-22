@@ -1,68 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cake Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./style.css">
+<!-- Header with Responsive Navigation -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-black px-4 py-3 position-relative flex-column">
 
-   <style>
-     .hero-section { 
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-   
-    .tagline {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 1.5rem;
-    }
-    
-</style>
+    <!-- Top Bar: Socials, Brand, Contact -->
+    <div class="container-fluid d-flex justify-content-between align-items-center w-100">
 
-</head>
-<body class="bg-black">
+      <!-- Social Icons (hide on screens < sm) -->
+      <div class="social-icons d-none d-sm-flex">
+        <a href="#"><i class="bi bi-facebook text-white me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram text-white me-3"></i></a>
+      </div>
 
-<!-- Header -->
-    <header>
-    <nav class="navbar navbar-expand-lg px-4 py-3">
-        <div class="container-fluid">
-        <div class="d-flex align-items-center">
-            <div class="social-icons me-3">
-            <a href="#"><i class="bi bi-facebook"></i></a> 
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-        </div>
-            <a class="navbar-brand mx-auto" href="/index.html">Cake Shop</a>
-      <div class="d-flex">
+      <!-- Brand (Always centered & doesn't overlap) -->
+      <div class="mx-auto">
+        <a class="navbar-brand position-absolute start-50 translate-middle" href="/index.html">Cake Shop</a> 
+      </div>
+
+      <!-- Contact Info (hide on screens < md) -->
+      <div class="d-none d-md-block">
         <a href="#" class="text-white">Call Us: +63 123 456 7890</a>
-        </div>
-        </div>
-    </nav>
-    </header>
-   
-    <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-black">
-    <div class="container justify-content-center">
+      </div>
+    </div>
+
+    <!-- Hamburger Button (small screens only) -->
+    <div class="container-fluid d-flex justify-content-center mt-2 d-lg-none">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse justify-content-center mt-2" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/cakes.html">Cakes</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/cakes.html">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact</a></li>
       </ul>
     </div>
+
   </nav>
+</header>
 
 <!-- Hero Section -->
   <section 
