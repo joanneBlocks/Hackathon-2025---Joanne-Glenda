@@ -198,6 +198,41 @@ form {
   z-index: 1030; /* Bootstrap default for navbars */
 }
 
+
+/* Contact */
+.contact-form {
+      padding: 50px 0;
+    }
+    textarea, input {
+      background-color: transparent !important;
+      border: 1px solid #fff !important;
+      color: #fff !important;
+      border-radius: 0 !important;
+    }
+    textarea::placeholder, input::placeholder {
+      color: #aaa;
+    }
+    .btn-send {
+      background-color: #f1c40f;
+      color: #000;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 0;
+      margin-top: 20px;
+    }
+    .btn-send:hover {
+      background-color: #d4aa2a;
+      color: #000;
+    }
+    .contact-info i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+    .contact-info p {
+      margin: 0 0 20px;
+    }
+
+
 /* Footer */
 
 footer {
