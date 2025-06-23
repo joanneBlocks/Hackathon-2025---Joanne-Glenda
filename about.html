@@ -5,53 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
     
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
+  Google Fonts
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./style.css">
-
-   <style>
-     .hero-section { 
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-   
-    .tagline {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 1.5rem;
-    }
-
-    .sticky-top {
-  z-index: 1030; /* Bootstrap default for navbars */
-}
-    
-</style>
-
 </head>
-
-  <!-- Back to Top Button -->
+  
+</body>
+<!-- Back to Top Button -->
   <button id="backToTopBtn" title="Go to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-  
-</body>
-
-
-
 <body class="bg-black">
 
 <!-- Header with Responsive Navigation -->
 <header>
     <nav class="navbar navbar-expand-lg bg-black px-4 py-5 fixed-top flex-column">
 
-    <!-- Top Bart -->
+    <!-- Top Bar -->
     <div class="container-fluid d-flex justify-content-between align-items-center w-100">
 
       <!-- Social Icons (hide on small screens) -->
@@ -66,8 +40,7 @@
       </div>
 
       <!-- Contact Info (hide on screens < md) -->
-      <div class="d-none d-md-block">
-        <a href="#" class="text-white">Call Us: +63 123 456 7890</a>
+      <div class="d-none d-md-block text-white">Call Us: +63 123 456 7890
       </div>
     </div>
 
@@ -233,8 +206,8 @@
 
   <!-- Blogs -->
 <div class="container-fluid my-5">
-  <div class="text-center mb-4">
-    <h2 class="text-white">Our Blogs</h2>
+  <div class="mb-4">
+    <h2 class=" text-center text-white">Our Blogs</h2>
   </div>
 
   <div class="row g-4">
@@ -248,7 +221,7 @@
         </div>
         <!-- Text Right -->
         <div class="col-md-7 d-flex flex-column justify-content-between p-4">
-            <h3 class="text-warning">Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</h2>
+            <h3 class="text-warning">Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</h3>
              <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, adipisci. Ullam voluptate eum perferendis voluptatem, blanditiis fugiat sint optio sed, ab totam porro est distinctio iusto officiis. Quod, nisi? Nisi?</p>
           </p>
           <a href="/blog.html" class="btn btn-outline-warning align-self-start">Learn More</a>
@@ -275,12 +248,76 @@
   </div>
 </div>
 
+<!-- Instagram -->
+ <div class="container my-5">
+    <div class="text-center my-4">
+        <h2 class="text-white my-4">Follow us on Instagram</h2>
+        <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-warning">
+            <i class="bi bi-instagram"></i> Cakeshop
+        </a>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 1.jpg" alt="InstaCake1" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 2.jpg" alt="InstaCake2" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 3.jpg" alt="InstaCake3" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 4.jpg" alt="InstaCake4" class="insta-img">
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container py-5">
+  <!-- Top row: Logo + Nav -->
+  <div class="row align-items-center justify-content-between mb-4">
+    <!-- Logo -->
+    <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+      <div class="footer-logo">Cake Shop</div>
+    </div>
+
+  <div class="footer-line"></div>
+
+  <!-- Bottom row: Social + Location + Contact -->
+  <div class="row text-center text-md-start">
+    <!-- Social -->
+    <div class="col-md-12 col-lg-6 mb-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto sunt vitae doloribus veniam iusto. Provident, molestias quia! Libero inventore vitae ipsa aut aperiam consequatur nostrum dolore facilis maiores voluptatem!</p>
+      <a href="https://www.instagram.com/accounts/login/?hl=en" class="social-btn"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/" class="social-btn"><i class="bi bi-facebook"></i> Facebook</a>
+    </div>
+
+
+    <!-- Location -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="footer-title"><i class="bi bi-geo-alt-fill"></i> Location</div>
+      <p>4736 Poe Lane,<br> Hot Springs,<br> Montana-59845</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="footer-title"><i class="bi bi-telephone-fill"></i> Contact</div>
+      <p>123-456-7890</p>
+      <p><a href="mailto:contact@cakeshop.com" class="text-white">contact@cakeshop.com</a></p>
+    </div>
+  </div>
+
+  <div class="text-center text-secondary mt-4 small">
+    Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.
+  </div>
+</footer>    
+
   <!-- Bootstrap JS & Icons -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-
-    <footer>Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.</footer>
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
