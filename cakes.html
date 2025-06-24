@@ -5,23 +5,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <header>
-        <h1>Cake Shop</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./cakes.html">Cakes</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.htlm">Contacts</a></li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="./style.css">
+    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">  
+<!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
 
-    <footer>Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.</footer>
-    <script src="./script.js"></script>
+   <style>
+     .hero-section { 
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+    .tagline {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.5rem;
+    }
+
+    .sticky-top {
+  z-index: 1030; /* Bootstrap default for navbars */
+}
+    
+</style>
+
+</head>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+</body>
+
+
+
+<body class="bg-black">
+
+<!-- Header with Responsive Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-black px-4 py-5 fixed-top flex-column">
+
+    <!-- Top Bart -->
+    <div class="container-fluid d-flex justify-content-between align-items-center w-100">
+
+      <!-- Social Icons (hide on small screens) -->
+      <div class="social-icons d-none d-sm-flex">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook text-white me-3"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-white me-3"></i></a>
+      </div>
+
+      <!-- Brand (always centered & doesn't overlap) -->
+      <div class="mx-auto">
+        <a class="navbar-brand position-absolute start-50 translate-middle" href="/index.html">Cake Shop</a> 
+      </div>
+
+      <!-- Contact Info (hide on screens < md) -->
+      <div class="d-none d-md-block">
+        <a href="#" class="text-white">Call Us: +63 123 456 7890</a>
+      </div>
+    </div>
+
+    <!-- Hamburger Button (small screens only) -->
+    <div class="container-fluid d-flex justify-content-center mt-2 d-lg-none">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse justify-content-center mt-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/cakes.html">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section 
+    class="hero-section text-white text-center bg-image"
+    style="
+        background-image: url(./assets_joanne/homePhoto5.jpg); 
+        object-fit: cover; 
+        width: 100vw; 
+        height: 50vh;"
+  >
+    <div>
+      <h1>Delicious Cakes</h1>
+    </div>
+  </section>
+
+  <!-- Cakes -->
+
+  <div class="testimonials">
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto1.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,699</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto2.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>15,999</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto3.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>2,899</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="testimonials">
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto4.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,689</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto6.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>2,599</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto7.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,999</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="testimonials">
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto8.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,799</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto9.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,899</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black card shadow-1-strong">
+        <div class = "card-body text-white">
+            <h5 class="card-title holographic-card">
+                <img src="./assets_joanne/homePhoto10.jpg" alt="star" width="300px">
+            </h5>
+            <p class="card-text">
+                &quot;Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.&quot;
+            </p>
+            <div class="customerDescription">
+                <img src="./assets_joanne/sample.png" alt="Customer1" width="30px"> <p><span>P</span>1,999</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <br>
+
+  <footer>Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.</footer>
+  <script src="./script.js"></script>
+
+  <!-- Joanne's Page -->
 </body>
 </html>

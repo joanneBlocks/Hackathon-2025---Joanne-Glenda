@@ -5,23 +5,387 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Cake Shop</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./cakes.html">Cakes</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.htlm">Contacts</a></li>
-        </ul>
-    </nav>
 
-    <footer>Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.</footer>
-    <script src="./script.js"></script>
+<body class="bg-black">
+<!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+<!-- Header with Responsive Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-black px-4 py-5 fixed-top flex-column">
+
+    <!-- Top Bar -->
+    <div class="container-fluid d-flex justify-content-between align-items-center w-100">
+
+      <!-- Social Icons (hide on small screens) -->
+      <div class="social-icons d-none d-sm-flex">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook text-white me-3"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-white me-3"></i></a>
+      </div>
+
+      <!-- Brand (always centered & doesn't overlap) -->
+      <div class="mx-auto">
+        <a class="navbar-brand position-absolute start-50 translate-middle" href="/index.html">Cake Shop</a> 
+      </div>
+
+      <!-- Contact Info (hide on screens < md) -->
+      <div class="d-none d-md-block text-white">Call Us: +63 123 456 7890
+      </div>
+    </div>
+
+    <!-- Hamburger Button (small screens only) -->
+    <div class="container-fluid d-flex justify-content-center mt-2 d-lg-none">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse justify-content-center mt-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/cakes.html">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+<!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+<!-- Header with Responsive Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-black px-4 py-5 fixed-top flex-column">
+
+    <!-- Top Bar -->
+    <div class="container-fluid d-flex justify-content-between align-items-center w-100">
+
+      <!-- Social Icons (hide on small screens) -->
+      <div class="social-icons d-none d-sm-flex">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook text-white me-3"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-white me-3"></i></a>
+      </div>
+
+      <!-- Brand (always centered & doesn't overlap) -->
+      <div class="mx-auto">
+        <a class="navbar-brand position-absolute start-50 translate-middle" href="/index.html">Cake Shop</a> 
+      </div>
+
+      <!-- Contact Info (hide on screens < md) -->
+      <div class="d-none d-md-block text-white">Call Us: +63 123 456 7890
+      </div>
+    </div>
+
+    <!-- Hamburger Button (small screens only) -->
+    <div class="container-fluid d-flex justify-content-center mt-2 d-lg-none">
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse justify-content-center mt-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/cakes.html">Cakes</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+<!-- Hero Section -->
+  <section 
+    class="hero-section text-white text-center bg-image"
+    style="
+        background-image: url(./assets_joanne/homePhoto5.jpg); 
+        object-fit: cover; 
+        width: 100%; 
+        height: 50vh;"
+  >
+    <div>
+      <h1 class="hero-title">About Us</h1>
+    </div>
+  </section>
+
+  
+  <!-- Tagline Section -->
+  <section class="tagline">
+    <h2>This is Schilers. Awesome Food Theme.<br>Purchase it and eat Burgers.</h2>
+    <!-- <hr style="width: 50px; margin: 20px auto; border: 2px solid #f1c40f;"> -->
+    <div class="separator mx-auto"></div>
+  </section>
+
+<!-- About-Content Section -->
+<div class="container-fluid py-5 bg-black">
+  <div class="row align-items-center">
+    
+    <!-- Left: Text Column -->
+    <div class="col-md-6 text-white px-5">
+      <h4 class="text-warning mb-4 font-size: 2rem">
+        This is Schilers. Awesome Food Theme.<br>
+        Purchase it and eat Burgers.
+      </h4>
+
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute dolor in reprehend erit in voluptate velit esse cillum.
+      </p>
+
+      <p>
+        Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in
+        reprehend erit in voluptate velit esse cillum.
+      </p>
+    </div>
+
+    <!-- Right: Image Column -->
+    <div class="col-md-5 text-center px-6 mb-4 mb-md-0">
+      <img src="/assets_glenda/Cake 3.jpg" alt="Cake" class="img-fluid rounded shadow">
+    </div>
+
+  </div>
+</div>
+
+<!-- From Index -->
+<div class="videoAlignment">
+        <iframe class="videoAlignment" src="https://www.youtube.com/embed/yb89hksK0Ds?si=9mtjaf-nCiyVZI31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+  <div class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="text-white">Food Lovers' Say</h2>
+  </div>
+
+  <div class="row g-3">
+    
+    <!-- Testimonial 1 -->
+    <div class="col-10 col-md-6 col-lg-4">
+      <div class="card h-100 border border-secondary bg-black text-light">
+        <div class="card-body p-3">
+          <div class="d-flex flex-wrap mb-2">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px">
+          </div>
+          <p class="card-text small mb-2">
+            "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna."
+          </p>
+          <div class="d-flex align-items-center mt-2">
+            <img src="./assets_joanne/sample.png" alt="Customer1" width="28px" class="me-2">
+            <p class="mb-0 small">Maria Maria</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="col-10 col-md-6 col-lg-4">
+      <div class="card h-100 border border-secondary bg-black text-light">
+        <div class="card-body p-3">
+          <div class="d-flex flex-wrap mb-2">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px">
+          </div>
+          <p class="card-text small mb-2">
+            "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna."
+          </p>
+          <div class="d-flex align-items-center mt-2">
+            <img src="./assets_joanne/sample.png" alt="Customer2" width="28px" class="me-2">
+            <p class="mb-0 small">Bernardo Bernardo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="col-10 col-md-6 col-lg-4">
+      <div class="card h-100 border border-secondary bg-black text-light">
+        <div class="card-body p-3">
+          <div class="d-flex flex-wrap mb-2">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px" class="me-1">
+            <img src="./assets_joanne/star.png" alt="star" width="20px">
+          </div>
+          <p class="card-text small mb-2">
+            "Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna."
+          </p>
+          <div class="d-flex align-items-center mt-2">
+            <img src="./assets_joanne/sample.png" alt="Customer3" width="28px" class="me-2">
+            <p class="mb-0 small">Roberto Roberto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Blogs -->
+<div class="container-fluid my-5">
+  <div class="mb-4">
+    <h2 class=" text-center text-white">Our Blogs</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Blog 1 -->
+    <div class="col-12 col-lg-6">
+      <div class="row bg-black text-white border border-secondary rounded-0 align-items-stretch g-0 h-100">
+        <!-- Image Left -->
+        <div class="col-md-5">
+          <img src="./assets_joanne/baking01.jpg" alt="Baking 1" class="img-fluid w-100 h-100 object-fit-cover">
+        </div>
+        <!-- Text Right -->
+        <div class="col-md-7 d-flex flex-column justify-content-between p-4">
+            <h3 class="text-warning">Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</h3>
+             <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, adipisci. Ullam voluptate eum perferendis voluptatem, blanditiis fugiat sint optio sed, ab totam porro est distinctio iusto officiis. Quod, nisi? Nisi?</p>
+          </p>
+          <a href="https://thecakeblog.com/2016/05/which-flour-is-best.html" class="btn btn-outline-warning align-self-start">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="col-12 col-lg-6">
+      <div class="row bg-black text-white border border-secondary rounded-0 align-items-stretch g-0 h-100">
+        <!-- Image Left -->
+        <div class="col-md-5">
+          <img src="./assets_joanne/baking02.jpg" alt="Baking 2" class="img-fluid w-100 h-100 object-fit-cover">
+        </div>
+        <!-- Text Right -->
+        <div class="col-md-7 d-flex flex-column justify-content-between p-4">
+          <h3 class="text-warning"> Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</h3>
+          <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo at consectetur provident veritatis accusamus ex ut possimus quam, nobis voluptate neque, excepturi tempore sequi, velit in itaque repudiandae nihil?</p>
+          <a href="https://thecakeblog.com/2017/02/chocolate-truffle-cake.html" class="btn btn-outline-warning align-self-start">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Instagram -->
+ <div class="container my-5">
+    <div class="text-center my-4">
+        <h2 class="text-white my-4">Follow us on Instagram</h2>
+        <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-warning">
+            <i class="bi bi-instagram"></i> Cakeshop
+        </a>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 1.jpg" alt="InstaCake1" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 2.jpg" alt="InstaCake2" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 3.jpg" alt="InstaCake3" class="insta-img">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+            <img src="assets_glenda/instaCake 4.jpg" alt="InstaCake4" class="insta-img">
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container py-5">
+  <!-- Top row: Logo + Nav -->
+  <div class="row align-items-center justify-content-between mb-4">
+    <!-- Logo -->
+    <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+      <div class="footer-logo">Cake Shop</div>
+    </div>
+
+  <div class="footer-line"></div>
+
+  <!-- Bottom row: Social + Location + Contact -->
+  <div class="row text-center text-md-start">
+    <!-- Social -->
+    <div class="col-md-12 col-lg-6 mb-4">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto sunt vitae doloribus veniam iusto. Provident, molestias quia! Libero inventore vitae ipsa aut aperiam consequatur nostrum dolore facilis maiores voluptatem!</p>
+      <a href="https://www.instagram.com/accounts/login/?hl=en" class="social-btn"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/" class="social-btn"><i class="bi bi-facebook"></i> Facebook</a>
+    </div>
+
+
+    <!-- Location -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="footer-title"><i class="bi bi-geo-alt-fill"></i> Location</div>
+      <p>4736 Poe Lane,<br> Hot Springs,<br> Montana-59845</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="footer-title"><i class="bi bi-telephone-fill"></i> Contact</div>
+      <p>123-456-7890</p>
+      <p><a href="mailto:contact@cakeshop.com" class="text-white">contact@cakeshop.com</a></p>
+    </div>
+  </div>
+
+<div class="footer-line"></div>
+  
+  <div class="text-center text-secondary mt-4 small">
+    Copyright &copy; All rights reserved. Glenda Poblete & Joanne Costo. 2025.
+  </div>
+</footer>    
+
+<script src="./script.js"></script>
 </body>
 </html>

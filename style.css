@@ -1,0 +1,282 @@
+body {
+  font-family: sans-serif;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 140px;
+  margin: 0;
+}
+/* Menu */
+
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #f1c40f !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 15px;    
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+}
+
+/* Make hamburger icon white */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-title {
+  font-family: 'Great Vibes', cursive;
+  color: #f1c40f;
+}
+
+
+/* Homepage (index.html) */
+.customerDescription {
+  display: flex;
+}
+
+.customerDescription img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.customerDescription p {
+  padding-top: 12px;
+}
+
+.testimonials {
+  display: flex;
+}
+
+.blogBoxes {
+  display: flex;
+}
+
+.blogBoxesDescription {
+  margin-right: 10px;
+}
+
+.blogBoxesDescription img {
+  height: 300px;
+}
+
+/* Carousel */
+
+.carouselAlignment {
+  text-align: center;
+}
+
+/* Video */
+
+/* .videoAlignment {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+/* Option 2 for responsiveness */
+.videoAlignment iframe {
+  height: 500px;
+  width: 100%;
+}
+
+/* Cakes (cakes.html) */
+
+span {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+
+.holographic-card {
+  width: 300px;
+  height: 200px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card img {
+  color: gold;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* Instagram */
+.insta-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .insta-btn:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+
+/* Form */
+
+form {
+  text-align: left;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  background-color: #e3ba3b;
+  color: white;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  font-size: 22px;
+  display: none;
+  transition: all 0.3s ease;
+}
+#backToTopBtn:hover {
+  background-color: #d4aa2a;
+}
+
+/* Hero Section */
+.hero-section { 
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+    .tagline {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 1.5rem;
+    }
+
+    .sticky-top {
+  z-index: 1030; /* Bootstrap default for navbars */
+}
+
+
+/* Contact */
+.contact-form {
+      padding: 50px 0;
+    }
+    textarea, input {
+      background-color: transparent !important;
+      border: 1px solid #fff !important;
+      color: #fff !important;
+      border-radius: 0 !important;
+    }
+    textarea::placeholder, input::placeholder {
+      color: #fff !important; 
+      opacity: 0.8;
+    }
+    .btn-send {
+      background-color: #f1c40f;
+      color: #000;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 0;
+      margin-top: 20px;
+    }
+    .btn-send:hover {
+      background-color: #d4aa2a;
+      color: #000;
+    }
+    .contact-info i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+    .contact-info p {
+      margin: 0 0 20px;
+    }
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ffc107;
+    }
+    .footer-line {
+      border-top: 1px solid #444;
+      margin: 20px 0;
+    }
+    .social-btn {
+      border: 1px solid #fff;
+      padding: 8px 20px;
+      border-radius: 0;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .social-btn:hover {
+      background-color: #ffc107;
+      color: black;
+    }
+
+
+    .footer-title {
+      color: #ffc107;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
